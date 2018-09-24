@@ -74,8 +74,3 @@ else
         echo -e "${RED}Operation not permitted! Optional swap was not created.${NC} \a"
         rm /var/swap.img
     fi
-
-echo -e "========================================================================
-${YELLOW}Masternode dependency and swap setup is complete!${NC}
-========================================================================
-# EOF
