@@ -64,7 +64,7 @@ if grep -q "swapfile" /etc/fstab; then
 else
     echo -e "${YELLOW}Creating 2GB disk swap file. \nThis may take a few minutes!${NC} \a"
     touch /var/swap.img
-    chmod 600 swap.img
+    chmod 600 /var/swap.img
     dd if=/dev/zero of=/var/swap.img bs=1024k count=2000
     mkswap /var/swap.img 2> /dev/null
     swapon /var/swap.img 2> /dev/null
