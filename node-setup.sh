@@ -58,7 +58,8 @@ sudo apt-get -y install make libtool autoconf libboost-dev  libgmp3-dev ufw pkg-
 
 
 #Create 2GB swap file
-if grep -q "SwapTotal" /proc/meminfo; then
+#if grep -q "SwapTotal" /proc/meminfo; then
+if grep -q "swapfile" /etc/fstab; then
     echo -e "${GREEN}Skipping disk swap configuration...${NC} \n"
 else
     echo -e "${YELLOW}Creating 2GB disk swap file. \nThis may take a few minutes!${NC} \a"
