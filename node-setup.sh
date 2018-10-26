@@ -47,7 +47,7 @@ sudo apt-get -y update
 sudo apt-get -y install wget nano htop jq
 sudo apt-get -y install libboost-system-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
 sudo apt-get -y install libevent-dev
-sudo apt-get -y install unzip
+sudo apt-get -y install unzip automake
 sudo apt-get -y install libdb4.8-dev libdb4.8++-dev 
 sudo apt-get -y install fail2ban
 sudo service fail2ban restart
