@@ -58,6 +58,16 @@ sudo apt-get -y install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools
 sudo apt-get -y install build-essential libtool autoconf-archive autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
 
    fi
-
+   
+   #Network Settings
+echo -e "Installing Network Settings..."
+sudo apt-get install ufw -y
+sudo apt-get update -y
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow ssh
+sudo ufw allow 22/tcp
+sudo ufw limit 22/tcp
+sudo ufw --force enable
 
 # EOF
