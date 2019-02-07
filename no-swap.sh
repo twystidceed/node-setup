@@ -48,7 +48,11 @@ sudo apt-get -y install wget nano htop jq
 sudo apt-get -y install libboost-system-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
 sudo apt-get -y install libevent-dev
 sudo apt-get -y install unzip automake
-sudo apt-get -y install libdb4.8-dev libdb4.8++-dev 
+sudo apt-get -y install libdb4.8-dev 
+sudo apt-get -y install libdb4.8++-dev 
+sudo apt-get -y install libminiupnpc-dev libzmq3-dev libevent-pthreads-2.0-5 
+sudo apt-get -y install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev 
+sudo apt-get -y install libqrencode-dev bsdmainutils 
 sudo apt-get -y install fail2ban
 sudo service fail2ban restart
 sudo apt-get -y install libdb5.3++-dev libdb++-dev libdb5.3-dev libdb-dev && ldconfig
