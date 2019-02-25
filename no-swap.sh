@@ -31,6 +31,7 @@ else
 fi
 
 #Check Deps
+sudo apt-get update
 if [ -d "/var/lib/fail2ban/" ]; 
 then
     echo -e "${GREEN}Dependencies already installed...${NC}"
