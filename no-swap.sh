@@ -31,7 +31,7 @@ else
 fi
 
 #Check Deps
-sudo apt-get update
+sudo apt-get -y update
 #if [ -d "/var/lib/fail2ban/" ]; 
 #then
 #    echo -e "${GREEN}Dependencies already installed...${NC}"
@@ -62,8 +62,8 @@ sudo apt-get -y install libzmq3-dev libzmq5 build-essential libssl-dev libqrenco
 sudo apt-get -y install make libtool autoconf libboost-dev  libgmp3-dev ufw pkg-config libboost-filesystem-dev libboost-all-dev
 sudo apt-get -y install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
 sudo apt-get -y install build-essential libtool autoconf-archive autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
-sudo apt-get update
-sudo apt-get install dtrx
+sudo apt-get -y update
+sudo apt-get install -y dtrx
 
   # fi
    
