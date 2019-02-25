@@ -7,4 +7,5 @@
 <br><br>
   
 <li> For instances where swap is locked 
+<li>No existing dependency check active
 <li> git clone https://github.com/twystidceed/node-setup.git && cd node-setup && bash no-swap.sh
