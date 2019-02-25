@@ -32,10 +32,10 @@ fi
 
 #Check Deps
 sudo apt-get update
-if [ -d "/var/lib/fail2ban/" ]; 
-then
-    echo -e "${GREEN}Dependencies already installed...${NC}"
-else
+#if [ -d "/var/lib/fail2ban/" ]; 
+#then
+#    echo -e "${GREEN}Dependencies already installed...${NC}"
+#else
     echo -e "${GREEN}Updating system and installing required packages...${NC}"
 
 sudo DEBIAN_FRONTEND=noninteractive apt-get update -y
@@ -45,6 +45,7 @@ sudo apt-get -y autoremove
 sudo apt -y install software-properties-common
 sudo add-apt-repository ppa:bitcoin/bitcoin -y
 sudo apt-get -y update
+apt-get -y install libqrencode-dev bsdmainutils
 sudo apt-get -y install wget nano htop jq
 sudo apt-get -y install libboost-system-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
 sudo apt-get -y install libevent-dev
@@ -64,7 +65,7 @@ sudo apt-get -y install build-essential libtool autoconf-archive autotools-dev a
 sudo apt-get update
 sudo apt-get install dtrx
 
-   fi
+  # fi
    
    #Network Settings
 echo -e "Installing Network Settings..."
