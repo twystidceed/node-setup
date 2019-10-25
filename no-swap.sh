@@ -78,7 +78,7 @@ sudo ufw allow 22/tcp
 sudo ufw limit 22/tcp
 sudo ufw --force enable
 
-sudo cd~
+sudo cd ~
 sudo rm -rf node-setup/
 
 # EOF
